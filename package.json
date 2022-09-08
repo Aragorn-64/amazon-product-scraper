@@ -1,0 +1,28 @@
+{
+  "name": "amazon-product-scraper",
+  "version": "1.0.0",
+  "description": "Simple JS based web-scraper to extract useful information from an Amazon product page",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aragorn-64/amazon-product-scraper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aragorn-64/amazon-product-scraper/issues"
+  },
+  "homepage": "https://github.com/Aragorn-64/amazon-product-scraper#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "fs": "^0.0.1-security",
+    "mysql": "^2.18.1",
+    "node-fetch": "^3.2.10"
+  }
+}
