@@ -13,13 +13,30 @@
     <div class="head">
         <h1>Essential info scraper for Amazon products</h1>
     </div>
-    <div class="input">
-        <input type="text" id="scrapeUrl">
-        <button id="submit">Scrape</button>
-    </div>
+    
+    <form action="localhost:8080/scrape/" method="get">
+        <div class="input">
+            <input type="text" id="scrapeUrl" name="scrapeUrl">
+            <!-- <button id="submit">Scrape</button> -->
+            <input type="submit" value="scrape">
+        </div> 
+    </form>
     <div class="result">
 
     </div>
+
+    <!-- <script>
+
+        const scrape = document.querySelector('#submit');
+        const scrapeUrl = document.querySelector('#scrapeUrl').value;
+
+        scrape.addEventListener("click", () =>{
+            // console.log(0);
+            fetch()
+
+        })
+    </script> -->
+
 
 </body>
 
