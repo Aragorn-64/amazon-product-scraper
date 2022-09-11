@@ -1,3 +1,3 @@
-./node-modules/
-./client.js
-./testing-ignore/
+node_modules/
+client.js
+testing-ignore/
