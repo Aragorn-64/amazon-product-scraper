@@ -16,26 +16,21 @@ app.listen( PORT, () => {
 })
 
 app.get('/scrape', async function (req, res){
-    console.log("got request");
+    console.log('recieved request');
 
     let quer = req.query;
     let link = quer['scrapeUrl'];
     let prod = await getProduct(link);
-    console.log(prod);
 
     res.status(200).send(prod);
+
+    console.log('returned response');
+
 })
-
-async function getFromLink(link){
-    console.log('reached getFromLink');
-    let prod1 = await getProduct(link);
-    console.log(prod1);
-    return prod1;
-}
-
 
 async function getProduct(url) {
     try {
+        // console.log('scraping ..');
         const response = await fetch(url);
         const body = await response.text();
         const $ = cheerio.load(body);
@@ -50,8 +45,9 @@ async function getProduct(url) {
             price: price
         };
 
-        // console.log(prod);
-
+        // console.log('done');
+        console.log(prod);
+        
         return prod;
 
 

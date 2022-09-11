@@ -1,14 +1,22 @@
 # amazon-product-scraper
  - Simple JS based web-scraper to extract useful information from an Amazon product page
-
- - Currently runs in the backend, but has to still be connected to a frontend
  - Can scrape some essential information from a Amazon product page 
-  <!--  - Currently only a server side app to display certain essential information in the console -->
+ - Displays the scraped data in the frontend
+
  
  ## To do: 
- - [x] Make an API and thus use the scraped data in a webpage
- - [ ] Connect API to frontend to display the product data
- - [ ] Fix CORS issue 
+ - [x] Restructure project
+ - [ ] Make a better UI
+ - [ ] Validate incoming urls 
+ - [ ] Scrape more data fields 
+ - [ ] Fix bugs
+ 
  
  ## How to use:
- Use url paths of the type http://localhost:8080/scrape/?scrapeUrl=https://amzn.eu/d/1ZGGxKT for now
+ <!-- - Clone repo
+ - Run ``` ``` -->
+ - Run ``` npm run start ``` 
+ - Open index.html 
+ - Enter amazon product URLs one by one, and essential data is scraped and displayed
+
+

@@ -1,0 +1,25 @@
+/* .result{
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+/* .card{
+    padding: 5px;
+    margin: 5px;
+    
+} */
+.head{
+    color: rgb(255, 248, 52);
+    background: rgb(0, 34, 252);
+    /* height: 70px; */
+    text-align: center;
+}
+.input{
+    background: rgb(200, 206, 248);
+    text-align: center;
+    height: max-content;
+}
+/* 
+#result{
+    background: rgb(200, 206, 248);
+} */
