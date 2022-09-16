@@ -28,7 +28,7 @@
         <label for="scrapeUrl">Enter Amazon product URL to scrape</label> <br>
         <input type="text" size="80" id="url" name="scrapeUrl"> <br>
         <button id="submit">Scrape</button> <br>
-        Please wait for the results to appear :)
+        <span id="prompt"></span> 
     </div>
 
     <div class="container text-center">
@@ -44,6 +44,7 @@
         const input = document.querySelector('#url');
 
         scrape.addEventListener("click", () => {
+            document.getElementById('prompt').textContent = 'Please wait for the results to appear :)'
             let inputUrl = input.value;
             console.log("value is " + inputUrl);
             let scrapeUrl = 'http://localhost:8080/scrape/?scrapeUrl=' + inputUrl;
